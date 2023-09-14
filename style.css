@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sky{
+    width: 100%;
+}
+
+.port{
+    position: relative;
+    z-index: 1;
+    top: 5px;
+}
+.airport{
+    margin-top: -300px;
+}
+.plane{
+    position: relative;
+    top: -330px;
+    left: 900px;
+    z-index: 1;
+    animation: plane 10s linear forwards infinite;
+    animation-delay: 7s;
+    transform:translate(1000px);
+}
+
+@keyframes plane {
+    0%{
+        transform: translateX(1000px);
+    }
+    25%{
+        transform: translate(-500px, -100px) rotate(10deg);
+    }
+    50%{
+        transform: translate(-1900px, -300px) rotate(10deg);
+    }
+
+    75%{
+        transform: translate(-1000px, -500px) rotate(18deg);
+    }
+    100%{
+        transform: translate(-1300px, -1400px) rotate(16deg);
+    }
+}
